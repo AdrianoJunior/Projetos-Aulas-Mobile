@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="MAPS">
+
+            <menu>
+                <group
+                    android:id="@+id/maps_group"
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_maps"
+                        android:checkable="true"
+                        android:checked="false"
+                        android:icon="@drawable/ic_action_maps"
+                        android:title="Google Maps" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Calculadora">
+
+            <menu>
+                <group
+                    android:id="@+id/calculadora_group"
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_calculadora"
+                        android:checkable="true"
+                        android:checked="false"
+                        android:icon="@drawable/ic_action_calculadora"
+                        android:title="Calculadora" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="SQLite">
+
+            <menu>
+                <group
+                    android:id="@+id/sqlite_group"
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_database"
+                        android:checkable="true"
+                        android:checked="false"
+                        android:icon="@drawable/ic_action_database"
+                        android:title="SQLite" />
+                </group>
+            </menu>
+        </item>
+
+
+    </group>
+
+</menu>
