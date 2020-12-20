@@ -53,6 +53,22 @@
             </menu>
         </item>
 
+        <item android:title="Login">
+
+            <menu>
+                <group
+                    android:id="@+id/login_group"
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_login"
+                        android:checkable="true"
+                        android:checked="false"
+                        android:icon="@drawable/ic_action_logout"
+                        android:title="Sair (voltar para o login)" />
+                </group>
+            </menu>
+        </item>
+
 
     </group>
 

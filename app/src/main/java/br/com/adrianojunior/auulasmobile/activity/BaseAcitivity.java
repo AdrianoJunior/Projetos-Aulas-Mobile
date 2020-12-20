@@ -1,5 +1,6 @@
 package br.com.adrianojunior.auulasmobile.activity;
 
+import android.content.Intent;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBar;
@@ -81,6 +82,13 @@ public class BaseAcitivity extends BaseActivity {
             case R.id.nav_database:
                 replaceFragment(new DatabaseFrag());
                 getSupportActionBar().setTitle("SQLite");
+                break;
+            case R.id.nav_login:
+                sendToLogin();
+                break;
+            default:
+                break;
+
         }
     }
 
@@ -114,5 +122,25 @@ public class BaseAcitivity extends BaseActivity {
     // Adiciona o fragment no centro da tela
     protected void replaceFragment(Fragment frag) {
         getSupportFragmentManager().beginTransaction().replace(R.id.container, frag, "TAG").commit();
+    }
+
+    /**
+     * Intent para enviar o usuário para
+     * a {@link MainActivity} e encerrar a activity atual
+     */
+    protected void sendToMain() {
+        Intent mainIntent = new Intent(getContext(), MainActivity.class);
+        startActivity(mainIntent);
+        finish();
+    }
+
+    /**
+     * Intent para enviar o usuário para
+     * a {@link LoginActivity} e encerrar a activity atual
+     */
+    protected void sendToLogin() {
+        Intent loginIntent = new Intent(getContext(), LoginActivity.class);
+        startActivity(loginIntent);
+        finish();
     }
 }

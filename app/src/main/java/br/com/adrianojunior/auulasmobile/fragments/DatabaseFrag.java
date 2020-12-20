@@ -49,9 +49,9 @@ public class DatabaseFrag extends BaseFragment implements AdapterView.OnItemSele
                 if (item.trim().length() > 0) {
                     DatabaseHandler db = new DatabaseHandler(getContext());
                     db.insertLabel(item);
-                    // making input filed text to blank
+                    // Deixando o texto do campo de entrada em branco
                     itemTxt.setText("");
-                    // loading spinner with newly added data
+                    // Carregando spinner com dados recém-adicionados
                     loadSpinnerData();
                 } else {
                     toast("Please enter item name");
@@ -64,19 +64,19 @@ public class DatabaseFrag extends BaseFragment implements AdapterView.OnItemSele
     private void loadSpinnerData() {
         DatabaseHandler db = new DatabaseHandler(getContext());
         List<String> labels = db.getAllLabels();
-        // Creating adapter for spinner
+        // Criando o adapter para o spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getContext(),
                 android.R.layout.simple_spinner_item, labels);// Drop down layout style - list view with radio button
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // attaching data adapter to spinner
+        // anexando adapter ao spinner
         spinner.setAdapter(dataAdapter);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        // On selecting a spinner item
+        // Selecionando um item no spinner
         String label = adapterView.getItemAtPosition(i).toString();
-        // Showing selected spinner item
+        // Mostrando o item selecionado do spinner
         toast("You selected: " + label);
     }
 

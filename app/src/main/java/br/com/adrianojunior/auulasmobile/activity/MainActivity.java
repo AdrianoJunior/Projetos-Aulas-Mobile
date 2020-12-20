@@ -3,6 +3,8 @@ package br.com.adrianojunior.auulasmobile.activity;
 import android.os.Bundle;
 
 import br.com.adrianojunior.auulasmobile.R;
+import br.com.adrianojunior.auulasmobile.fragments.CalculadoraFrag;
+import br.com.adrianojunior.auulasmobile.fragments.DatabaseFrag;
 import br.com.adrianojunior.auulasmobile.fragments.MapsFragment;
 
 public class MainActivity extends BaseAcitivity {
