@@ -1,11 +1,11 @@
 # Aulas Mobile
 
-<img src="screenshots/ic_launcher.png.jpeg"/>
+<img src="screenshots/ic_launcher.png"/>
 Compilado dos projetos desenvolvidos durante as aulas de Programação Mobile na FATEC Taubaté.
 
 ## Getting Started
 
-<img src="screenshots/01.png.jpeg"/>
+<img src="screenshots/01.png"/>
 
 ### MENU/NAVEGAÇÃO
 
@@ -14,7 +14,7 @@ NavigationDrawer utilizado para navegar entre os fragmentts utilizados no projet
     SetUpToolbar() e SetUpNavDrawer()
     para utilizar o menu corretamente)
 
-<img src="screenshots/00.png.jpeg"/>
+<img src="screenshots/00.png"/>
 
 
 ### LOGIN
