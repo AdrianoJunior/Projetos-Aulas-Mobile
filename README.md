@@ -26,10 +26,12 @@ Página de login que inicia a página de validação via onClick após ter os da
 <img src="screenshots/02.png" width="180" height="320"/>
 
 #### 1.2 - ValidatorActivity
-Página de validação, inicia a MainActivity após validar os dados (após 300 milissegundos) 
+Página de validação, inicia a MainActivity após validar os dados (após 300 milissegundos)
+
 <img src="screenshots/03.png" width="180" height="320"/>
 
 ### MAPS
+
 <img src="screenshots/04.png" width="180" height="320"/>
 
 #### MapsFragment
@@ -39,6 +41,7 @@ Fragment uttilizado para mostrar o mapa com marcador com nome e local definido p
 <img src="screenshots/05.png" width="180" height="320"/>
 
 ### CALCULADORA
+
 <img src="screenshots/06.png" width="180" height="320"/>
 
 #### CalculadoraFrag
@@ -47,6 +50,7 @@ Fragment utilizado para o projeto da calculadora
 <img src="screenshots/07.png" width="180" height="320"/>
 
 ### SQLITE
+
 <img src="screenshots/08.png" width="180" height="320"/>
 
 #### DatabaseFrag
