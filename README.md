@@ -5,7 +5,7 @@ Compilado dos projetos desenvolvidos durante as aulas de Programação Mobile na
 
 ## Getting Started
 
-<img src="screenshots/01.png"/>
+<img src="screenshots/01.png" width="180" height="320"/>
 
 ### MENU/NAVEGAÇÃO
 
