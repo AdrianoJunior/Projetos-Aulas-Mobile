@@ -153,9 +153,11 @@ public class MapsFragment extends BaseFragment {
                                 if (!latTxt.getText().toString().isEmpty() && latTxt.getText().toString() != null
                                         && !lngTxt.getText().toString().isEmpty() && lngTxt.getText().toString() != null
                                         && localTxt.getText().toString() != null && !localTxt.getText().toString().isEmpty()) {
-                                    Double lat = Double.parseDouble(latTxt.getText().toString());
-                                    Double lng = Double.parseDouble(lngTxt.getText().toString());
+                                    Double lat = Double.parseDouble(latTxt.getText().toString().replace(",", "."));
+                                    Double lng = Double.parseDouble(lngTxt.getText().toString().replace(",", "."));
                                     String local = localTxt.getText().toString();
+                                    latTxt.setText(latTxt.getText().toString().replace(",","."));
+                                    lngTxt.setText(lngTxt.getText().toString().replace(",","."));
 
                                     if (lat != null && lng != null) {
                                         LatLng position = new LatLng(lat, lng);
