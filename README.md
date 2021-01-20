@@ -14,7 +14,7 @@ NavigationDrawer utilizado para navegar entre os fragmentts utilizados no projet
     SetUpToolbar() e SetUpNavDrawer()
     para utilizar o menu corretamente)
 
-<img src="screenshots/00.png"/>
+<img src="screenshots/00.png" width="180" height="320"/>
 
 
 ### LOGIN
